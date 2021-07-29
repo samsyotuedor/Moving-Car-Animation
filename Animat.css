@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.highway{
+    height: 200px;
+    width: 955%;
+    display: block;
+    background-image: url(road2.jpg);
+    background-size: 50.2%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+.city{
+    height: 495px;
+    /* max-height: 1775px; */
+    padding-bottom: 100px;
+    width: 500%;
+    background-image: url(city3.gif);
+    background-size: 55%;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+.car{
+   width: 400px;
+   left: 50%;
+   bottom: 50px;
+   transform: translateX(-50%);
+   position: absolute;
+   z-index: 2;  
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.wheel{
+    left: 50%;
+    bottom: 180px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img{
+    width: 75px;
+    height: 75px;
+    animation: wheel 1s linear infinite;
+}
+.back-wheel{
+    top: 50px;
+    left:-166px;
+    position: absolute;
+}
+.front-wheel{
+    top: 50px;
+    left:78px;
+    position: absolute;
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 360px) {
+    .city{
+        height: 695px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 60%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+    .highway{
+        height: 200px;
+        width: 800%;
+        display: block;
+        background-image: url(road2.jpg);
+        background-size: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: highway 5s linear infinite;
+    }
+    @keyframes highway{
+        100%{
+            transform: translateX(-2400px);
+        }
+    }
+}
+@media screen and (max-width: 587px) {
+    .city{
+        height: 99px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 25%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .city{
+        height: 699px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 21%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .city{
+        height: 499px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 21%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+}
+@media screen and (min-width: 800px) {
+    .city{
+        height: 360px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 21%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+}
+@media screen and (min-width: 600px) {
+    .city{
+        height: 499px;
+        /* max-height: 1775px; */
+        padding-bottom: 100px;
+        width: 500%;
+        background-image: url(city3.gif);
+        background-size: 40%;
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+        right: 0;
+        display: block;
+        z-index: 1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+}
